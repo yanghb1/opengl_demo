@@ -17,11 +17,11 @@ public:
     void SetStartIndex(int index);
 
 protected:
-    void initializeGL();
+    void initializeGL() override;
 
-    void resizeGL(int w, int h);
+    void resizeGL(int w, int h) override;
 
-    void paintGL();
+    void paintGL() override;
 
     void wheelEvent(QWheelEvent *event) override;
     void mousePressEvent(QMouseEvent *event) override;
